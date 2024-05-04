@@ -1,5 +1,5 @@
 public class Account {
-    enum accountType { NONE, SILVER, GOLD };
+    enum accountType { NONE, SILVER, GOLD }; // idk to keep we have membershipType already
 
     private String accountID;
     private String username; // added
