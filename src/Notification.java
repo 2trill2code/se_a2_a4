@@ -8,8 +8,6 @@ public class Notification {
     private String notificationContent;
     private Date dateSent;
 
-    // might to add some params to the functions ?
-
     /**
      * @param accountID The ID of the account to send to
      * @return No return value

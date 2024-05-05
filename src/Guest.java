@@ -19,5 +19,4 @@ public class Guest {
      * @return No return value
      */
     public void register() { return; };
-
 }

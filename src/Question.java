@@ -7,9 +7,8 @@ public class Question extends Post {
     private int numVotes;
 
     /**
-     * @param modID The ID of the mod deleting the answer
-     * @param postID The ID of the answer being deleted
+     * @param postID The ID of the post being selected as helpful
      * @return No return value
      */
-    public void deleteAnswer(String modID, String postID) { return; }; // feel like this should be in the mod class
+    public void selectHelpfulAnswer(String postID) { return; };
 }

@@ -1,38 +1,24 @@
-import java.util.Date;
 import java.util.List;
+import java.util.Date;
 
 public class Comment {
-    private List<Flag> flags; // if there is a flag class should this be a flag type?
-    private Post post;
-
     private String commentID;
-    private String accountID; // accountID ?
-    private Date postDate;
     private String content;
-    private long numVotes; // change to long
+    private String author;
+    private Date postDate;
+    private List<Flag> flags;
+    private int numVotes;
 
     /**
      * @param void
      * @return No return value
      */
-    public void editComment() { return; }; // does this need a param if its just editing itself?
+    public void changeVote(int vote) { return; };
 
     /**
-     * @param void
+     * @param accountID
      * @return No return value
      */
-    public void addFlag() { return; };
-
-    /**
-     * @param void
-     * @return No return value
-     */
-    public void upvoteComment() { return; };
-
-    /**
-     * @param void
-     * @return No return value
-     */
-    public void downvoteComment() { return; };
-
+    public void notifyPoster(String accountID) { return; }; 
 }
+

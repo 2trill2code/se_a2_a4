@@ -1,6 +1,6 @@
 public class CommunityPost extends Post {
     private String title;
-    private boolean isEndorsed; // feel like this could be a list of admins/mods who approved this ?
+    private boolean isEndorsed;
 
     /**
      * @param setHide Sets visibility of votes

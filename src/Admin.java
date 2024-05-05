@@ -4,13 +4,13 @@ public class Admin extends Moderator {
     private List<Task> taskLog;
     
     private String adminID;
-    private String role; // enum type ???
+    private String role;
     
     /**
      * @param accountID The ID of the account to be accessed
-     * @return No return value
+     * @return String literal displaying account attributes
      */
-    public void accessUserDetails(String accountID) { return; };
+    public String accessUserDetails(String accountID) { return ""; };
 
     /**
      * @param accountID The ID of the account to be promoted
@@ -22,5 +22,5 @@ public class Admin extends Moderator {
      * @param modID The ID of the mod to be demoted
      * @return No return value
      */
-    public void demoteFromMod(String modID) { return; }; // accountID should be modID ???
+    public void demoteFromMod(String modID) { return; };
 }
