@@ -1,5 +1,11 @@
+import java.util.List;
+
 public class Account {
     enum accountType { NONE, SILVER, GOLD }; // idk to keep we have membershipType already
+
+    private Inbox inbox;
+    private Membership membership;
+    private List<Post> posts;
 
     private String accountID;
     private String username; // added
@@ -16,25 +22,25 @@ public class Account {
      * @param void
      * @return The ID of the post
      */
-    public void createPost() { };
+    public String createPost() { return ""; };
 
     /**
      * @param void
      * @return The ID of the question
      */
-    public void createQuestion() { };
+    public String createQuestion() { return ""; };
 
     /**
      * @param postID The ID of the post (question) being answered
      * @return The ID of the answer
      */
-    public void createAnswer(String postID) { };
+    public String createAnswer(String postID) { return "";};
 
     /**
      * @param postID The ID of the post (question/answer/post) being commented on
      * @return The ID of the comment
      */
-    public void createComment(String postID) { };
+    public String createComment(String postID) { return ""; };
 
     /**
      * @param postID The ID of the post being flagged

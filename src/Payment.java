@@ -1,11 +1,19 @@
+import java.util.Date;
+
 public class Payment {
     enum PaymentStatus { PAID, PENDING, PROCESSED };
 
+    private Membership membership;
+
     private boolean automaticPayment;
-    private String paymentDue;
+    private Date paymentDue;
     private PaymentStatus status;
 
-    public void paymentOption() {};
+    /**
+     * @param accountID The ID of the paying account
+     * @return The payment option the account is using
+     */
+    public String paymentOption(String accountID) { return ""; };
     public void createBill() {};
     public void processPayment() {};
 }
